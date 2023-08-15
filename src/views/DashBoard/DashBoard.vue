@@ -74,7 +74,7 @@
 
 <script setup lang="ts" name="DashBoard">
 import {ArrowRight} from '@element-plus/icons-vue'
-import DashTow from './DashTow.vue'
+
 </script>
 
 <style scoped>
