@@ -69,12 +69,14 @@
       </div>
     </el-col>
   </el-row>
-  <div><DashTow/></div>
+
+<div><DashTow/></div>
+  <div style="padding-top: 20px;"><DashTitle/></div>
 </template>
-
 <script setup lang="ts" name="DashBoard">
+import DashTow from './compontent/DashTow.vue'
+import DashTitle from './compontent/DashTitle.vue';
 import {ArrowRight} from '@element-plus/icons-vue'
-
 </script>
 
 <style scoped>

@@ -22,10 +22,20 @@ const router = createRouter({
   ],
     },
     {
+      path: '/login',
+      name: 'login',
+      component: () => import('@v/Login/Login.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@v/NotFound/NotFound.vue')
+    },
+    {
       path: '/setting',
       name: 'setting',
       component: () => import('@v/Setting/Setting.vue')
-    }
+    },
   ]
 })
 

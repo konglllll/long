@@ -1,7 +1,12 @@
 <template>
   <el-row class="tac">
 
-    <el-menu active-text-color="#ffd04b" default-active="2" class="el-menu-vertical-demo" @open="handleOpen" router
+    <el-menu
+     active-text-color="#ffd04b"
+      default-active="1"
+      class="el-menu-vertical-demo"
+      @open="handleOpen"
+      router
       @close="handleClose">
       <div class="tac-head"><img src="../../assets//images//02.png" alt=""></div>
       <el-sub-menu index="1">
@@ -9,10 +14,8 @@
           <i class="iconfont icon-yibiaopan"></i>
           <span>仪表盘</span>
         </template>
-        <el-menu-item-group title="Group One">
-          <el-menu-item index="1-1">item one</el-menu-item>
-          <el-menu-item index="1-2">item two</el-menu-item>
-        </el-menu-item-group>
+          <el-menu-item index="/dashBored">概念仪表盘</el-menu-item>
+          <el-menu-item index="1-2">统计报表</el-menu-item>
       </el-sub-menu>
       <el-sub-menu index="2">
         <template #title>
@@ -31,7 +34,7 @@
           <span>表单页</span>
         </template>
         <el-menu-item-group title="Group One">
-          <el-menu-item index="1-1">item one</el-menu-item>
+          <el-menu-item index="/dashBored"></el-menu-item>
           <el-menu-item index="1-2">item two</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
@@ -116,7 +119,9 @@ const handleClose = (key: string, keyPath: string[]) => {
 }
 }
 
-
+.iconfont {
+  padding-right: 10px;
+}
 
 .tac-head {
   border-bottom: 1px solid #e7e7e7;
